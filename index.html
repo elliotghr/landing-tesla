@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tesla</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <style>
+      @font-face {
+        font-family: "Gotham SSm A";
+        src: url("./GothamSSm-Medium_Web.woff2") format("truetype");
+        font-style: normal;
+        font-weight: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      id="landing-header"
+      class="flex justify-between items-center w-full fixed z-40 px-12 py-5 top-0 text-white"
+    >
+      <div class="flex flex-grow basis-0">
+        <svg
+          class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon w-28"
+          viewBox="0 0 342 35"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 .1a9.7 9.7 0 0 0 7 7h11l.5.1v27.6h6.8V7.3L26 7h11a9.8 9.8 0 0 0 7-7H0zm238.6 0h-6.8v34.8H263a9.7 9.7 0 0 0 6-6.8h-30.3V0zm-52.3 6.8c3.6-1 6.6-3.8 7.4-6.9l-38.1.1v20.6h31.1v7.2h-24.4a13.6 13.6 0 0 0-8.7 7h39.9v-21h-31.2v-7h24zm116.2 28h6.7v-14h24.6v14h6.7v-21h-38zM85.3 7h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 13.8h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zm0 14.1h26a9.6 9.6 0 0 0 7.1-7H78.3a9.6 9.6 0 0 0 7 7zM308.5 7h26a9.6 9.6 0 0 0 7-7h-40a9.6 9.6 0 0 0 7 7z"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+      <nav>
+        <ul
+          class="flex text-sm flex-grow justify-center [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        >
+          <li><a href="#">Model S</a></li>
+          <li><a href="#">Model 3</a></li>
+          <li><a href="#">Model X</a></li>
+          <li><a href="#">Model Y</a></li>
+          <li><a href="#">Cybertruck</a></li>
+          <li><a href="#">Powerwall</a></li>
+        </ul>
+      </nav>
+      <nav class="flex flex-grow basis-0 justify-end">
+        <ul
+          class="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        >
+          <li><a href="">Tienda</a></li>
+          <li><a href="">Cuenta</a></li>
+          <li><a href="">Menú</a></li>
+        </ul>
+      </nav>
+      <div
+        id="menuBackDrop"
+        class="absolute bg-black/5 rounded backdrop-blur-lg left-[var(--left)] top-[var(--top)] w-[var(--width)] h-[var(--height)] transition-all duration-300 ease-out opacity-0 -z-10"
+      ></div>
+    </header>
+    <main class="h-screen w-full overflow-auto snap-y snap-mandatory">
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="white"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]:text-white">
+            <h2 class="pt-44 text-[40px] font-medium">Disfrute de Tesla</h2>
+            <p class="text-sm">Programe una prueba de conducción hoy mismo</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <a
+              class="text-sm text-white rounded-sm border-[3px] px-12 py-2 hover:text-black transition-colors hover:bg-white ease-in-out backdrop-blur-sm"
+              href="#"
+              >Prueba de conducción</a
+            >
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <video
+            class="w-full h-full object-cover object-center"
+            src="./assets/Homepage-Test_Drive-NA-Desktop.webm"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Model Y</h2>
+            <p class="text-sm underline">Concertar una prueba de conducción</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-800 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Explorar inventario</a
+              >
+              <a
+                class="text-black border-white bg-white transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Pedido Personalizado</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Homepage-Model-Y-Global-Desktop.avif"
+          />
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Model 3</h2>
+            <p class="text-sm underline">Concertar una prueba de conducción</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-800 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Explorar inventario</a
+              >
+              <a
+                class="text-black border-white bg-white transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Pedido Personalizado</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Homepage-Model-3-Desktop-LHD.avif"
+          />
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Model X</h2>
+            <p class="text-sm underline">Programe una consulta virtual</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-800 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Pedido Personalizado</a
+              >
+              <a
+                class="text-black border-white bg-white transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Saber más</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Model-S-homepage-desktop.avif"
+          />
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Model X</h2>
+            <p class="text-sm underline">Concertar una prueba de conducción</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-800 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Pedido Personalizado</a
+              >
+              <a
+                class="text-black border-white bg-white transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Saber más</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Homepage-Model-X-Desktop-LHD.avif"
+          />
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Solar y Powerwall</h2>
+            <p class="text-sm underline">Concertar una prueba de conducción</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-600 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Saber más</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Desktop_SolarPanels.avif"
+          />
+        </div>
+      </section>
+      <!-- New section -->
+      <section
+        class="bg-black h-screen w-full relative text-center overflow-hidden snap-center"
+        data-header-color="black"
+      >
+        <div class="z-30 relative h-full flex flex-col">
+          <header class="[&>*]: text-black">
+            <h2 class="pt-44 text-[40px] font-medium">Accesories</h2>
+            <p class="text-sm underline">Concertar una prueba de conducción</p>
+          </header>
+          <footer
+            class="flex flex-col flex-grow justify-end items-center pb-20"
+          >
+            <div
+              class="flex gap-4 [&>a]:text-sm [&>a]:px-12 [&>a]:rounded-md [&>a]:border-[3px] [&>a]:py-2"
+            >
+              <a
+                class="text-white border-gray-900 bg-gray-800 transition-colors ease-in-out backdrop-blur-sm"
+                href="#"
+                >Comprar ahora</a
+              >
+            </div>
+          </footer>
+        </div>
+        <div class="absolute top-0 bottom-0 right-0 left-0">
+          <img
+            class="w-full h-full object-cover object-center"
+            src="./assets/Desktop_Accessories.avif"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+    <script>
+      const listItem = document.querySelectorAll("#landing-header li"),
+        menuBackDrop = document.getElementById("menuBackDrop");
+      console.log(listItem);
+      listItem.forEach((item) => {
+        item.addEventListener("mouseenter", (e) => {
+          const { left, top, width, height } = item.getBoundingClientRect();
+
+          menuBackDrop.style.setProperty("--left", `${left}px`);
+          menuBackDrop.style.setProperty("--top", `${top}px`);
+          menuBackDrop.style.setProperty("--width", `${width}px`);
+          menuBackDrop.style.setProperty("--height", `${height}px`);
+          menuBackDrop.style.opacity = "1";
+          menuBackDrop.style.visibility = "visible";
+        });
+        item.addEventListener("mouseleave", (e) => {
+          menuBackDrop.style.opacity = "0";
+          menuBackDrop.style.visibility = "hidden";
+        });
+      });
+    </script>
+  </body>
+</html>
